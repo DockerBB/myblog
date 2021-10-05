@@ -1,0 +1,823 @@
+2021-09-24 10:04:44.803  INFO 37516 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 37516 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:04:44.808  INFO 37516 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:04:44.871  INFO 37516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:04:44.872  INFO 37516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:04:46.252  INFO 37516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:04:46.262  INFO 37516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:04:46.263  INFO 37516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:04:46.326  INFO 37516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:04:46.327  INFO 37516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1454 ms
+2021-09-24 10:04:46.447  INFO 37516 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:04:47.347  INFO 37516 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:04:48.555  INFO 37516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:04:48.626  INFO 37516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:04:48.639  INFO 37516 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 4.21 seconds (JVM running for 5.014)
+2021-09-24 10:05:00.794  INFO 37516 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:05:00.794  INFO 37516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:05:00.808  INFO 37516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 10:05:00.848  INFO 37516 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:05:01.317  INFO 37516 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:05:01.318  INFO 37516 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:07:03.006  INFO 42500 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 42500 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:07:03.008  INFO 42500 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:07:03.048  INFO 42500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:07:03.048  INFO 42500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:07:04.420  INFO 42500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:07:04.432  INFO 42500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:07:04.432  INFO 42500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:07:04.503  INFO 42500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:07:04.503  INFO 42500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1455 ms
+2021-09-24 10:07:04.627  INFO 42500 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:07:05.023  INFO 42500 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:07:06.026  INFO 42500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:07:06.068  INFO 42500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:07:06.077  INFO 42500 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.484 seconds (JVM running for 4.421)
+2021-09-24 10:07:08.596  INFO 42500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:07:08.596  INFO 42500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:07:08.611  INFO 42500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-09-24 10:07:08.647  INFO 42500 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:07:08.901  INFO 42500 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:07:08.901  INFO 42500 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:09:11.228  INFO 40772 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 40772 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:09:11.231  INFO 40772 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:09:11.269  INFO 40772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:09:11.269  INFO 40772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:09:12.718  INFO 40772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:09:12.729  INFO 40772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:09:12.729  INFO 40772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:09:12.795  INFO 40772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:09:12.796  INFO 40772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1527 ms
+2021-09-24 10:09:12.918  INFO 40772 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:09:13.336  INFO 40772 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:09:14.384  INFO 40772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:09:14.426  INFO 40772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:09:14.435  INFO 40772 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.614 seconds (JVM running for 4.593)
+2021-09-24 10:09:17.108  INFO 40772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:09:17.108  INFO 40772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:09:17.120  INFO 40772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:09:17.149  INFO 40772 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:09:17.370  INFO 40772 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:09:17.370  INFO 40772 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:12:08.788  INFO 28204 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 28204 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:12:08.791  INFO 28204 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:12:08.832  INFO 28204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:12:08.833  INFO 28204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:12:10.215  INFO 28204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:12:10.230  INFO 28204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:12:10.230  INFO 28204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:12:10.297  INFO 28204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:12:10.297  INFO 28204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1464 ms
+2021-09-24 10:12:10.412  INFO 28204 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:12:10.828  INFO 28204 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:12:11.853  INFO 28204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:12:11.894  INFO 28204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:12:11.904  INFO 28204 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.557 seconds (JVM running for 4.675)
+2021-09-24 10:12:16.316  INFO 28204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:12:16.316  INFO 28204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:12:16.327  INFO 28204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:12:16.352  INFO 28204 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:12:16.567  INFO 28204 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:12:16.567  INFO 28204 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:12:34.333  INFO 28204 --- [http-nio-8080-exec-6] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:12:34.336  INFO 28204 --- [http-nio-8080-exec-6] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:12:34.336  INFO 28204 --- [http-nio-8080-exec-6] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:14:28.775  INFO 28204 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:14:28.783  INFO 28204 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:14:28.783  INFO 28204 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:14:41.952  INFO 32204 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 32204 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:14:41.954  INFO 32204 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:14:41.994  INFO 32204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:14:41.994  INFO 32204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:14:43.364  INFO 32204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:14:43.375  INFO 32204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:14:43.375  INFO 32204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:14:43.441  INFO 32204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:14:43.441  INFO 32204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1447 ms
+2021-09-24 10:14:43.567  INFO 32204 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:14:43.979  INFO 32204 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:14:45.003  INFO 32204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:14:45.046  INFO 32204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:14:45.055  INFO 32204 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.549 seconds (JVM running for 4.481)
+2021-09-24 10:14:52.342  INFO 32204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:14:52.343  INFO 32204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:14:52.355  INFO 32204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:14:52.380  INFO 32204 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:14:52.583  INFO 32204 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:14:52.584  INFO 32204 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:15:15.139  INFO 8960 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 8960 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:15:15.142  INFO 8960 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:15:15.192  INFO 8960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:15:15.192  INFO 8960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:15:16.496  INFO 8960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:15:16.506  INFO 8960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:15:16.506  INFO 8960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:15:16.571  INFO 8960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:15:16.572  INFO 8960 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1379 ms
+2021-09-24 10:15:16.705  INFO 8960 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:15:17.128  INFO 8960 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:15:18.259  INFO 8960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:15:18.310  INFO 8960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:15:18.324  INFO 8960 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.622 seconds (JVM running for 4.531)
+2021-09-24 10:15:28.879  INFO 8960 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:15:28.880  INFO 8960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:15:28.891  INFO 8960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:15:28.916  INFO 8960 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:15:29.121  INFO 8960 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:15:29.121  INFO 8960 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:15:42.477  INFO 8960 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:15:42.480  INFO 8960 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:15:42.480  INFO 8960 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:17:15.273  INFO 31344 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 31344 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:17:15.276  INFO 31344 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:17:15.327  INFO 31344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:17:15.327  INFO 31344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:17:16.617  INFO 31344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:17:16.626  INFO 31344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:17:16.626  INFO 31344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:17:16.687  INFO 31344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:17:16.688  INFO 31344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1360 ms
+2021-09-24 10:17:16.806  INFO 31344 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:17:17.216  INFO 31344 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:17:18.233  INFO 31344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:17:18.282  INFO 31344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:17:18.292  INFO 31344 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.529 seconds (JVM running for 4.482)
+2021-09-24 10:17:21.935  INFO 31344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:17:21.935  INFO 31344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:17:21.946  INFO 31344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:17:21.973  INFO 31344 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:17:22.184  INFO 31344 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:17:22.184  INFO 31344 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:17:47.222  INFO 42404 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 42404 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:17:47.224  INFO 42404 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:17:47.269  INFO 42404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:17:47.269  INFO 42404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:17:48.550  INFO 42404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:17:48.560  INFO 42404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:17:48.560  INFO 42404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:17:48.622  INFO 42404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:17:48.622  INFO 42404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1352 ms
+2021-09-24 10:17:48.741  INFO 42404 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:17:49.152  INFO 42404 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:17:50.178  INFO 42404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:17:50.224  INFO 42404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:17:50.234  INFO 42404 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.402 seconds (JVM running for 4.314)
+2021-09-24 10:17:51.729  INFO 42404 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:17:51.730  INFO 42404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:17:51.741  INFO 42404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:17:51.767  INFO 42404 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:17:51.975  INFO 42404 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:17:51.975  INFO 42404 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:17:53.118 ERROR 42404 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "test": Exception evaluating SpringEL expression: "user.nickname" (template: "test" - line 24, col 21)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "user.nickname" (template: "test" - line 24, col 21)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'nickname' cannot be found on object of type 'com.wf.myblog.Bean.User' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 59 common frames omitted
+
+2021-09-24 10:17:53.123 ERROR 42404 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "user.nickname" (template: "test" - line 24, col 21)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'nickname' cannot be found on object of type 'com.wf.myblog.Bean.User' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-24 10:18:35.129  INFO 42436 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 42436 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:18:35.132  INFO 42436 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:18:35.175  INFO 42436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:18:35.175  INFO 42436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:18:36.475  INFO 42436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:18:36.487  INFO 42436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:18:36.487  INFO 42436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:18:36.558  INFO 42436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:18:36.558  INFO 42436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
+2021-09-24 10:18:36.688  INFO 42436 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:18:37.091  INFO 42436 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:18:38.095  INFO 42436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:18:38.139  INFO 42436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:18:38.149  INFO 42436 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.43 seconds (JVM running for 4.295)
+2021-09-24 10:19:10.999  INFO 42436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:19:10.999  INFO 42436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:19:11.012  INFO 42436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:19:11.041  INFO 42436 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:19:11.281  INFO 42436 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:19:11.281  INFO 42436 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:19:35.800  INFO 36012 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 36012 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:19:35.801  INFO 36012 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:19:35.843  INFO 36012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:19:35.844  INFO 36012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:19:37.121  INFO 36012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:19:37.130  INFO 36012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:19:37.131  INFO 36012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:19:37.296  INFO 36012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:19:37.297  INFO 36012 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1453 ms
+2021-09-24 10:19:37.425  INFO 36012 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:19:37.838  INFO 36012 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:19:38.856  INFO 36012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:19:38.898  INFO 36012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:19:38.908  INFO 36012 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.526 seconds (JVM running for 4.44)
+2021-09-24 10:19:39.325  INFO 36012 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:19:39.326  INFO 36012 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:19:39.338  INFO 36012 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:19:39.363  INFO 36012 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:19:39.576  INFO 36012 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:19:39.577  INFO 36012 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:20:26.464  INFO 34296 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 34296 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:20:26.467  INFO 34296 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:20:26.504  INFO 34296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:20:26.505  INFO 34296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:20:28.028  INFO 34296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:20:28.037  INFO 34296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:20:28.038  INFO 34296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:20:28.100  INFO 34296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:20:28.100  INFO 34296 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1595 ms
+2021-09-24 10:20:28.215  INFO 34296 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:20:28.627  INFO 34296 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:20:29.668  INFO 34296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:20:29.712  INFO 34296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:20:29.722  INFO 34296 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.654 seconds (JVM running for 4.644)
+2021-09-24 10:20:31.485  INFO 34296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:20:31.485  INFO 34296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:20:31.498  INFO 34296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 10:20:31.523  INFO 34296 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:20:31.729  INFO 34296 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:20:31.729  INFO 34296 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:20:58.668  INFO 43208 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 43208 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:20:58.752  INFO 43208 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:20:58.789  INFO 43208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:20:58.789  INFO 43208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:21:00.072  INFO 43208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:21:00.083  INFO 43208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:21:00.084  INFO 43208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:21:00.147  INFO 43208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:21:00.148  INFO 43208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1359 ms
+2021-09-24 10:21:00.271  INFO 43208 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:21:00.691  INFO 43208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:21:01.753  INFO 43208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:21:01.796  INFO 43208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:21:01.805  INFO 43208 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.557 seconds (JVM running for 4.522)
+2021-09-24 10:21:02.121  INFO 43208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:21:02.121  INFO 43208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:21:02.133  INFO 43208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:21:02.158  INFO 43208 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:21:02.375  INFO 43208 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:21:02.376  INFO 43208 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:22:23.648  INFO 44008 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 44008 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:22:23.653  INFO 44008 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:22:23.690  INFO 44008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:22:23.690  INFO 44008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:22:25.124  INFO 44008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:22:25.138  INFO 44008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:22:25.138  INFO 44008 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:22:25.221  INFO 44008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:22:25.222  INFO 44008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+2021-09-24 10:22:25.379  INFO 44008 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:22:25.858  INFO 44008 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:22:26.983  INFO 44008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:22:27.026  INFO 44008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:22:27.036  INFO 44008 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.798 seconds (JVM running for 4.726)
+2021-09-24 10:22:32.758  INFO 44008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:22:32.758  INFO 44008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:22:32.770  INFO 44008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:22:32.796  INFO 44008 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='127.0.0.1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:22:33.003  INFO 44008 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:22:33.003  INFO 44008 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:22:48.063  INFO 41016 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 41016 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:22:48.067  INFO 41016 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:22:48.105  INFO 41016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:22:48.105  INFO 41016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:22:49.430  INFO 41016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:22:49.440  INFO 41016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:22:49.440  INFO 41016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:22:49.505  INFO 41016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:22:49.505  INFO 41016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+2021-09-24 10:22:49.642  INFO 41016 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:22:50.168  INFO 41016 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:22:51.309  INFO 41016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:22:51.354  INFO 41016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:22:51.365  INFO 41016 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.717 seconds (JVM running for 4.638)
+2021-09-24 10:22:54.563  INFO 41016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:22:54.564  INFO 41016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:22:54.575  INFO 41016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:22:54.601  INFO 41016 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:22:54.806  INFO 41016 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:22:54.806  INFO 41016 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:23:17.080  INFO 12508 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 12508 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:23:17.082  INFO 12508 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:23:17.125  INFO 12508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:23:17.126  INFO 12508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:23:19.554  INFO 12508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:23:19.564  INFO 12508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:23:19.564  INFO 12508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:23:19.631  INFO 12508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:23:19.631  INFO 12508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2505 ms
+2021-09-24 10:23:19.749  INFO 12508 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:23:20.159  INFO 12508 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:23:21.206  INFO 12508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:23:21.251  INFO 12508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:23:21.262  INFO 12508 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 4.749 seconds (JVM running for 5.713)
+2021-09-24 10:23:21.804  INFO 12508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:23:21.805  INFO 12508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:23:21.826  INFO 12508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2021-09-24 10:23:21.856  INFO 12508 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:23:22.117  INFO 12508 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:23:22.117  INFO 12508 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:24:23.842  INFO 37000 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 37000 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:24:23.848  INFO 37000 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:24:23.885  INFO 37000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:24:23.885  INFO 37000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:24:25.188  INFO 37000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:24:25.198  INFO 37000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:24:25.198  INFO 37000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:24:25.261  INFO 37000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:24:25.262  INFO 37000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1376 ms
+2021-09-24 10:24:25.382  INFO 37000 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:24:25.810  INFO 37000 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:24:26.857  INFO 37000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:24:26.900  INFO 37000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:24:26.909  INFO 37000 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.46 seconds (JVM running for 4.351)
+2021-09-24 10:24:30.347  INFO 37000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:24:30.348  INFO 37000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:24:30.359  INFO 37000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:24:30.385  INFO 37000 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:24:30.588  INFO 37000 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:24:30.589  INFO 37000 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:25:54.818  INFO 29180 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 29180 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:25:54.820  INFO 29180 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:25:54.859  INFO 29180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:25:54.859  INFO 29180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:25:56.157  INFO 29180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:25:56.167  INFO 29180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:25:56.167  INFO 29180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:25:56.232  INFO 29180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:25:56.232  INFO 29180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1373 ms
+2021-09-24 10:25:56.349  INFO 29180 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:25:56.776  INFO 29180 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:25:57.819  INFO 29180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:25:57.861  INFO 29180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:25:57.870  INFO 29180 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.449 seconds (JVM running for 4.315)
+2021-09-24 10:25:59.455  INFO 29180 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:25:59.456  INFO 29180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:25:59.468  INFO 29180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:25:59.493  INFO 29180 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:25:59.709  INFO 29180 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:25:59.709  INFO 29180 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:26:00.090 ERROR 29180 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "test": Exception evaluating SpringEL expression: "user.userName" (template: "test" - line 27, col 37)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "user.userName" (template: "test" - line 27, col 37)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'userName' cannot be found on object of type 'com.wf.myblog.Bean.User' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 59 common frames omitted
+
+2021-09-24 10:26:00.094 ERROR 29180 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "user.userName" (template: "test" - line 27, col 37)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'userName' cannot be found on object of type 'com.wf.myblog.Bean.User' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-24 10:26:45.278  INFO 43184 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 43184 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:26:45.281  INFO 43184 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:26:45.321  INFO 43184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:26:45.321  INFO 43184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:26:46.590  INFO 43184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:26:46.600  INFO 43184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:26:46.601  INFO 43184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:26:46.669  INFO 43184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:26:46.670  INFO 43184 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1348 ms
+2021-09-24 10:26:46.826  INFO 43184 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:26:47.273  INFO 43184 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:26:48.414  INFO 43184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:26:48.459  INFO 43184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:26:48.469  INFO 43184 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.654 seconds (JVM running for 4.586)
+2021-09-24 10:26:51.410  INFO 43184 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:26:51.411  INFO 43184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:26:51.424  INFO 43184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 10:26:51.452  INFO 43184 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:26:51.664  INFO 43184 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:26:51.664  INFO 43184 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:31:07.601  INFO 29576 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 29576 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:31:07.604  INFO 29576 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:31:07.640  INFO 29576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:31:07.641  INFO 29576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:31:08.970  INFO 29576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:31:08.980  INFO 29576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:31:08.981  INFO 29576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:31:09.049  INFO 29576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:31:09.050  INFO 29576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2021-09-24 10:31:09.169  INFO 29576 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:31:09.572  INFO 29576 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:31:10.625  INFO 29576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:31:10.670  INFO 29576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:31:10.683  INFO 29576 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.482 seconds (JVM running for 4.445)
+2021-09-24 10:31:10.769  INFO 29576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:31:10.769  INFO 29576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:31:10.782  INFO 29576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 10:31:10.808  INFO 29576 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='127.0.0.1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:31:11.052  INFO 29576 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:31:15.351  INFO 29576 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:32:41.027  INFO 29576 --- [http-nio-8080-exec-5] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:32:41.035  INFO 29576 --- [http-nio-8080-exec-5] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:32:41.035  INFO 29576 --- [http-nio-8080-exec-5] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:34:14.500  INFO 29576 --- [http-nio-8080-exec-8] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:34:14.506  INFO 29576 --- [http-nio-8080-exec-8] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:34:14.506  INFO 29576 --- [http-nio-8080-exec-8] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:38:00.337  INFO 43804 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 43804 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:38:00.340  INFO 43804 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:38:00.380  INFO 43804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:38:00.380  INFO 43804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:38:01.897  INFO 43804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:38:01.907  INFO 43804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:38:01.907  INFO 43804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:38:01.974  INFO 43804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:38:01.975  INFO 43804 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1594 ms
+2021-09-24 10:38:02.098  INFO 43804 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:38:02.521  INFO 43804 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:38:03.594  INFO 43804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:38:03.638  INFO 43804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:38:03.647  INFO 43804 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.74 seconds (JVM running for 4.823)
+2021-09-24 10:38:05.065  INFO 43804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:38:05.065  INFO 43804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:38:05.077  INFO 43804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:38:05.103  INFO 43804 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:38:05.322  INFO 43804 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:38:05.323  INFO 43804 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:38:23.094  INFO 44624 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 44624 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:38:23.097  INFO 44624 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:38:23.134  INFO 44624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:38:23.134  INFO 44624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:38:24.395  INFO 44624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:38:24.404  INFO 44624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:38:24.405  INFO 44624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:38:24.469  INFO 44624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:38:24.469  INFO 44624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1334 ms
+2021-09-24 10:38:24.583  INFO 44624 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:38:24.987  INFO 44624 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:38:26.004  INFO 44624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:38:26.051  INFO 44624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:38:26.061  INFO 44624 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.393 seconds (JVM running for 4.314)
+2021-09-24 10:38:27.878  INFO 44624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:38:27.879  INFO 44624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:38:27.895  INFO 44624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2021-09-24 10:38:27.923  INFO 44624 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:38:28.136  INFO 44624 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:38:28.136  INFO 44624 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:38:31.733  INFO 44624 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:38:31.737  INFO 44624 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:38:31.737  INFO 44624 --- [http-nio-8080-exec-2] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:38:34.189  INFO 44624 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:38:34.194  INFO 44624 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:38:34.194  INFO 44624 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:38:36.213  INFO 44624 --- [http-nio-8080-exec-4] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:38:36.216  INFO 44624 --- [http-nio-8080-exec-4] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:38:36.216  INFO 44624 --- [http-nio-8080-exec-4] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:38:51.339  INFO 28376 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 28376 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:38:51.342  INFO 28376 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:38:51.384  INFO 28376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:38:51.385  INFO 28376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:38:52.853  INFO 28376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:38:52.864  INFO 28376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:38:52.864  INFO 28376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:38:52.933  INFO 28376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:38:52.933  INFO 28376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1548 ms
+2021-09-24 10:38:53.051  INFO 28376 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:38:53.472  INFO 28376 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:38:54.513  INFO 28376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:38:54.556  INFO 28376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:38:54.566  INFO 28376 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.656 seconds (JVM running for 4.566)
+2021-09-24 10:38:57.621  INFO 28376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:38:57.621  INFO 28376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:38:57.633  INFO 28376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:38:57.658  INFO 28376 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:38:57.865  INFO 28376 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:38:57.865  INFO 28376 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:40:27.196  INFO 17872 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 17872 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:40:27.198  INFO 17872 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:40:27.237  INFO 17872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:40:27.237  INFO 17872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:40:28.580  INFO 17872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:40:28.590  INFO 17872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:40:28.590  INFO 17872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:40:28.653  INFO 17872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:40:28.653  INFO 17872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1415 ms
+2021-09-24 10:40:28.766  INFO 17872 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:40:29.169  INFO 17872 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:40:30.193  INFO 17872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:40:30.235  INFO 17872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:40:30.244  INFO 17872 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.452 seconds (JVM running for 4.5)
+2021-09-24 10:40:31.363  INFO 17872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:40:31.364  INFO 17872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:40:31.376  INFO 17872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-09-24 10:40:31.401  INFO 17872 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:40:31.611  INFO 17872 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:40:31.611  INFO 17872 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:40:36.244  INFO 17872 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:40:36.246  INFO 17872 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:40:36.247  INFO 17872 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:41:03.835  INFO 33156 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 33156 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:41:03.898  INFO 33156 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:41:03.934  INFO 33156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:41:03.934  INFO 33156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:41:05.249  INFO 33156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:41:05.258  INFO 33156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:41:05.258  INFO 33156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:41:05.323  INFO 33156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:41:05.323  INFO 33156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1388 ms
+2021-09-24 10:41:05.440  INFO 33156 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:41:05.880  INFO 33156 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:41:06.905  INFO 33156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:41:06.946  INFO 33156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:41:06.956  INFO 33156 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.517 seconds (JVM running for 4.435)
+2021-09-24 10:41:09.514  INFO 33156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:41:09.515  INFO 33156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:41:09.526  INFO 33156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-09-24 10:41:09.551  INFO 33156 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:41:09.770  INFO 33156 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:41:09.770  INFO 33156 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:41:15.290  INFO 33156 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:41:15.293  INFO 33156 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:41:15.293  INFO 33156 --- [http-nio-8080-exec-3] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 10:42:47.479  INFO 34440 --- [restartedMain] com.wf.myblog.MyblogApplication          : Starting MyblogApplication on DESKTOP-SRJ3EB6 with PID 34440 (C:\Users\user\Desktop\myblog\target\classes started by user in C:\Users\user\Desktop\blog)
+2021-09-24 10:42:47.481  INFO 34440 --- [restartedMain] com.wf.myblog.MyblogApplication          : No active profile set, falling back to default profiles: default
+2021-09-24 10:42:47.517  INFO 34440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-24 10:42:47.518  INFO 34440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-24 10:42:48.759  INFO 34440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 10:42:48.768  INFO 34440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 10:42:48.768  INFO 34440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-24 10:42:48.831  INFO 34440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-24 10:42:48.832  INFO 34440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1314 ms
+2021-09-24 10:42:48.948  INFO 34440 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-09-24 10:42:49.356  INFO 34440 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-24 10:42:50.365  INFO 34440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-24 10:42:50.407  INFO 34440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-24 10:42:50.416  INFO 34440 --- [restartedMain] com.wf.myblog.MyblogApplication          : Started MyblogApplication in 3.348 seconds (JVM running for 4.387)
+2021-09-24 10:42:51.660  INFO 34440 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 10:42:51.660  INFO 34440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 10:42:51.675  INFO 34440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-09-24 10:42:51.706  INFO 34440 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 10:42:51.970  INFO 34440 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 10:42:51.971  INFO 34440 --- [http-nio-8080-exec-1] com.wf.myblog.aspect.LogAspect           : --------doAfter--------
+2021-09-24 20:31:19.879  INFO 34440 --- [http-nio-8080-exec-8] com.wf.myblog.aspect.LogAspect           : Request : {url='http://localhost:8080/getAllUser', ip='0:0:0:0:0:0:0:1', classMethod='com.wf.myblog.Controller.indexController.getAllUser', args=[{}]}
+2021-09-24 20:31:19.931  INFO 34440 --- [http-nio-8080-exec-8] com.wf.myblog.aspect.LogAspect           : Result : test
+2021-09-24 20:31:19.931  INFO 34440 --- [http-nio-8080-exec-8] com.wf.myblog.aspect.LogAspect           : --------doAfter--------

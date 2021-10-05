@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <div th:replace="_fragments :: script"></div>
+    <title>test</title>
+</head>
+<body>
+
+    <div class="m-padded-tb-large m-container">
+        <div class="ui segment">
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>头像</th>
+                    <th>邮箱</th>
+                    <th>昵称</th>
+                    <th>用户名</th>
+                </tr>
+                </thead>
+                        <tbody>
+                            <tr th:each="user:${users}">
+                                <td th:text="${user.id}"></td>
+                                <td th:text="${user.avatar}"  style="width: 5px"></td>
+                                <td th:text="${user.email}"></td>
+                                <td th:text="${user.nickName}"></td>
+                                <td th:text="${user.userName}"></td>
+                            </tr>
+                        </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+</html>
