@@ -1,10 +1,12 @@
 package com.wf.myblog.Bean;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.gitee.sunchenbin.mybatis.actable.annotation.*;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlCharsetConstant;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlEngineConstant;
 import lombok.Data;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -32,7 +34,7 @@ public class Message {
     private String avatar;
 
     @Column
-    private Date createTime;
+    private Timestamp createTime;
 
     @Column
     private Long parentMessageId;

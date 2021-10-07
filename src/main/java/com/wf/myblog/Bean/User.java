@@ -1,11 +1,12 @@
 package com.wf.myblog.Bean;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.gitee.sunchenbin.mybatis.actable.annotation.*;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlCharsetConstant;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlEngineConstant;
 import lombok.Data;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Data
 @Table(comment = "用户信息表")
@@ -21,7 +22,7 @@ public class User {
     private String avatar;
 
     @Column
-    private Date createTime;
+    private Timestamp createTime;
 
     @Column
     private String email;
@@ -36,7 +37,7 @@ public class User {
     private Long type;
 
     @Column
-    private Date updateTime;
+    private Timestamp updateTime;
 
     @Column
     private String userName;

@@ -28,7 +28,7 @@ public class LoginController {
      */
     @GetMapping
     public String loginPage(){
-        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+//        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         return "admin/login";
     }
 

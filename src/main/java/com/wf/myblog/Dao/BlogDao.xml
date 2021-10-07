@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wf.myblog.Dao.BlogDao">
-
-    <select id="getAllBlog" resultType="com.wf.myblog.Bean.Blog">
-        select b.id as id, t.name as type, b.recommend as recommend, b.update_time as updateTime
-        from blog.blog as b, blog.type as t
-        where b.type_id=t.id
+    <!--查询文章管理列表多对一配置-->
+    <resultMap type="com.wf.myblog.queryenc.BlogQuery" id="blogQuery">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="recommend" column="recommend"/>
+        <result property="published" column="published"/>
+        <result property="typeId" column="type_id"/>
+        <association property="type" javaType="com.wf.myblog.Bean.Type">
+            <id property="id" column="tid"/>
+            <result property="name" column="name"/>
+        </association>
+    </resultMap>
+<!--    查询所有blog-->
+    <select id="getAllBlog" resultMap="blogQuery">
+        select b.id, b.title, DATE_FORMAT(b.update_time, '%Y-%m-%d %H:%i:%S') as update_time, b.recommend, b.published, b.type_id, t.id as tid, t.name
+        from blog.blog b left outer join blog.type t on b.type_id=t.id
+        order by b.update_time desc
     </select>
 
+<!--    根据id查询blog-->
+    <select id="getBlogById" resultType="com.wf.myblog.Bean.Blog">
+        select id, title, content, first_picture as firstPicture, flag, views, comment_count as commentCount, appreciation,
+               share_statement as shareStatement, commentable, published, recommend, create_time as createTime, update_time as updateTime,
+               description, type_id as typeId, user_id as userId
+        from blog.blog
+        where id=#{id}
+    </select>
+
+    <!--    更新blog-->
+    <update id="updateBlog" parameterType="com.wf.myblog.Bean.Blog">
+        update blog.blog set title=#{title},content=#{content},first_picture=#{firstPicture},flag=#{flag},
+                             views=#{views},comment_count=#{commentCount},appreciation=#{appreciation},
+                             share_statement=#{shareStatement},commentable=#{commentable}, published=#{published},
+                             recommend=#{recommend},create_time=#{createTime},update_time=#{updateTime},description=#{description},
+                             type_id=#{typeId},user_id=#{userId}
+        where id = #{id}
+    </update>
+
+<!--    新增blog-->
+    <insert id="saveBlog" parameterType="com.wf.myblog.Bean.Blog">
+        insert into blog.blog (id,title, content, first_picture, flag,
+                                   views, comment_count, appreciation, share_statement, commentable, published,
+                                   recommend, create_time, update_time, description, type_id, user_id)
+        values (#{id}, #{title}, #{content}, #{firstPicture}, #{flag}, #{views}, #{commentCount}, #{appreciation},
+                #{shareStatement}, #{commentable}, #{published}, #{recommend}, #{createTime},
+                #{updateTime}, #{description}, #{typeId}, #{userId});
+    </insert>
+
+<!--    删除blog-->
+    <delete id="deleteBlog">
+        delete from blog.blog where id=#{id}
+    </delete>
 </mapper>
