@@ -54,4 +54,23 @@
     <delete id="deleteBlog">
         delete from blog.blog where id=#{id}
     </delete>
+
+<!--    根据标题、分类、是否推荐查询-->
+    <select id="getByTitleOrTypeOrRecommend" parameterType="com.wf.myblog.queryenc.SearchBlog" resultMap="blogQuery">
+        <bind name="pattern" value="'%' + title + '%'" />
+        select b.id, b.title, DATE_FORMAT(b.update_time, '%Y-%m-%d %H:%i:%S') as update_time, b.recommend, b.published, b.type_id, t.id as tid, t.name
+        from blog.blog b left outer join blog.type t on b.type_id=t.id
+        <where>
+            <if test="title != null">
+                and b.title like #{pattern}
+            </if>
+            <if test="typeId != null">
+                and b.type_id=#{typeId}
+            </if>
+            <if test="recommend != null">
+                and b.recommend=#{recommend}
+            </if>
+        </where>
+
+    </select>
 </mapper>

@@ -4,6 +4,7 @@ package com.wf.myblog.Service;
 import com.wf.myblog.Bean.Blog;
 import com.wf.myblog.Dao.BlogDao;
 import com.wf.myblog.queryenc.BlogQuery;
+import com.wf.myblog.queryenc.SearchBlog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,11 @@ public class BlogServiceImpl implements  BlogService{
     @Override
     public List<BlogQuery> getAllBlog() {
         return blogDao.getAllBlog();
+    }
+
+    @Override
+    public List<BlogQuery> getSearchBlog(SearchBlog searchBlog) {
+        return blogDao.getByTitleOrTypeOrRecommend(searchBlog);
     }
 
     @Override

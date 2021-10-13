@@ -2,6 +2,7 @@ package com.wf.myblog.Dao;
 
 import com.wf.myblog.Bean.Blog;
 import com.wf.myblog.queryenc.BlogQuery;
+import com.wf.myblog.queryenc.SearchBlog;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -19,4 +20,6 @@ public interface BlogDao {
     Blog getBlogById(Long id);
 
     int updateBlog(Blog blog);
+
+    List<BlogQuery> getByTitleOrTypeOrRecommend(SearchBlog searchBlog);
 }

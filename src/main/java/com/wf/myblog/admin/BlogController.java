@@ -11,6 +11,7 @@ import com.wf.myblog.Service.BlogService;
 import com.wf.myblog.Service.CategoryService;
 import com.wf.myblog.Service.TagService;
 import com.wf.myblog.queryenc.BlogQuery;
+import com.wf.myblog.queryenc.SearchBlog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,9 +42,11 @@ public class BlogController {
         List<BlogQuery> Blogs = blogService.getAllBlog();
         System.out.println(Blogs.toString());
         PageInfo<BlogQuery> pageInfo = new PageInfo<>(Blogs);
+        model.addAttribute("searchBlog", new Blog());
         model.addAttribute("types",categoryService.listType());
         model.addAttribute("tags", tagService.listTag());
         model.addAttribute("pageInfo", pageInfo);
+
         return "admin/manage";
     }
 
@@ -105,5 +108,27 @@ public class BlogController {
         int t = blogService.deleteBlog(id);
 
         return "redirect:/admin/getAllBlog";
+    }
+
+    // 博客条件查询
+    @PostMapping("/searchBlog")
+    public String searchBlog(SearchBlog searchBlog, Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
+        System.out.println("###########");
+        String orderBy = "id asc";
+//        Blog blog = (Blog) model.getAttribute("searchBlog");
+//        System.out.println(blog.getTitle());
+        System.out.println(searchBlog.toString());
+        if(searchBlog.getTitle().equals("")) searchBlog.setTitle(null);
+//        if(searchBlog.getTitle() == null) System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@");
+//        else {
+//            System.out.println(searchBlog.getTitle());
+//            System.out.println("$$$$$$$");
+//        }
+        PageHelper.startPage(pageNum, 10, orderBy);
+        List<BlogQuery> Blogs = blogService.getSearchBlog(searchBlog);
+        System.out.println(Blogs.toString());
+        PageInfo<BlogQuery> pageInfo = new PageInfo<>(Blogs);
+        model.addAttribute("pageInfo", pageInfo);
+        return "admin/manage :: blogList";
     }
 }
