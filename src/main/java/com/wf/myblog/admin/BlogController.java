@@ -38,7 +38,7 @@ public class BlogController {
     @GetMapping("/getAllBlog")
     public String Blog(Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
         String orderBy = "id asc";
-        PageHelper.startPage(pageNum, 10, orderBy);
+        PageHelper.startPage(pageNum, 5, orderBy);
         List<BlogQuery> Blogs = blogService.getAllBlog();
         System.out.println(Blogs.toString());
         PageInfo<BlogQuery> pageInfo = new PageInfo<>(Blogs);
@@ -49,6 +49,7 @@ public class BlogController {
 
         return "admin/manage";
     }
+
 
     //跳转博客新增页面
     @GetMapping("/blogs/input")
@@ -115,16 +116,18 @@ public class BlogController {
     public String searchBlog(SearchBlog searchBlog, Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
         System.out.println("###########");
         String orderBy = "id asc";
-//        Blog blog = (Blog) model.getAttribute("searchBlog");
-//        System.out.println(blog.getTitle());
         System.out.println(searchBlog.toString());
-        if(searchBlog.getTitle().equals("")) searchBlog.setTitle(null);
-//        if(searchBlog.getTitle() == null) System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@");
+        if(searchBlog.getTitle().equals("")) {
+            System.out.println("***************");
+            searchBlog.setTitle(null);
+        }
+        if(searchBlog.getTitle() == null) System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@");
 //        else {
 //            System.out.println(searchBlog.getTitle());
 //            System.out.println("$$$$$$$");
 //        }
-        PageHelper.startPage(pageNum, 10, orderBy);
+        System.out.println(searchBlog.toString());
+        PageHelper.startPage(pageNum, 5, orderBy);
         List<BlogQuery> Blogs = blogService.getSearchBlog(searchBlog);
         System.out.println(Blogs.toString());
         PageInfo<BlogQuery> pageInfo = new PageInfo<>(Blogs);

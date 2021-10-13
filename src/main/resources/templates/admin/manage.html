@@ -78,9 +78,11 @@
                             <div class="menu">
                                 <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">我的故事</div>
                             </div>
-                        </div>
-                    </div>
 
+                        </div>
+
+                    </div>
+                    <button id="clear-btn" class="ui compact clear button">clear</button>
                     <div class="field">
                         <div class="ui checkbox">
                             <input type="checkbox" id="recommend" name="recommend">
@@ -127,8 +129,8 @@
                     <tr>
                         <th colspan="6">
                             <div class="ui mini floated pagination menu">
-                                <a class="item">上一页</a>
-                                <a class="item">下一页</a>
+                                <a class="item" onclick="page(this)" th:attr="data-page=${pageInfo.pageNum}-1" th:unless="${pageInfo.isFirstPage}">上一页</a>
+                                <a class="item" onclick="page(this)" th:attr="data-page=${pageInfo.pageNum}+1" th:unless="${pageInfo.isLastPage}">下一页</a>
                             </div>
                             <a href="" th:href="@{/admin/blogs/input}" class="ui mini right floated teal basic button">新增</a>
                         </th>
@@ -189,7 +191,8 @@
         });
 
         function page(obj) {
-            $("[name='page']").val($(obj).data("page"));
+            var d = $("[name='page']").val($(obj).data("page"));
+            console.log(d)
             loaddata();
         }
 
@@ -197,14 +200,20 @@
             $("[name='page']").val(0);
             loaddata();
         });
+
         function loaddata() {
             $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/searchBlog",{
                 title : $("[name='title']").val(),
                 typeId : $("[name='typeId']").val(),
                 recommend: $("[name='recommend']").prop('checked'),
-                page : $("[name='page']").val()
+                pageNum : $("[name='page']").val()
             });
         }
+
+        $("#clear-btn").on('click', function (){
+            // alert(1)
+            $('.dropdown').dropdown('clear')
+        })
     </script>
 </body>
 </html>
