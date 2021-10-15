@@ -1,29 +1,74 @@
 package com.wf.myblog.Controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.wf.myblog.Bean.Blog;
 import com.wf.myblog.Bean.User;
-import com.wf.myblog.Service.UserService;
-import com.wf.myblog.Service.UserServiceImpl;
+import com.wf.myblog.Service.*;
+import com.wf.myblog.queryenc.BlogIndex;
+import com.wf.myblog.queryenc.BlogQuery;
+import com.wf.myblog.queryenc.BlogTitle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Controller
 public class indexController {
     @Autowired
-    UserServiceImpl userService;
+    UserService userService;
 
-    @RequestMapping("/")
-    public String index() {
+    @Autowired
+    CategoryService categoryService;
+
+    @Autowired
+    TagService tagService;
+
+    @Autowired
+    BlogService blogService;
+
+    @RequestMapping("/index")
+    public String index(Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
+        String orderBy = "id desc";
+        PageHelper.startPage(pageNum, 5, orderBy);
+        List<BlogIndex> BlogsDigit = blogService.getBlogDigit();
+        System.out.println(BlogsDigit.toString());
+        PageInfo<BlogIndex> pageInfo = new PageInfo<>(BlogsDigit);
+        model.addAttribute("pageInfo", pageInfo);
+        model.addAttribute("types", categoryService.listType());
+        model.addAttribute("tags", tagService.listTag());
+
+        List<BlogTitle> blogTitles = blogService.getBlogTitle();
+        System.out.println(blogTitles.toString());
+        model.addAttribute("blogRecommend", blogTitles);
         return "index";
+    }
+
+    @RequestMapping("/blog/page")
+    public String blogPage(Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
+        System.out.println(pageNum);
+        String orderBy = "id desc";
+        PageHelper.startPage(pageNum, 5, orderBy);
+        List<BlogIndex> BlogsDigit = blogService.getBlogDigit();
+        System.out.println(BlogsDigit.toString());
+
+        PageInfo<BlogIndex> pageInfo = new PageInfo<>(BlogsDigit);
+        model.addAttribute("pageInfo", pageInfo);
+        return "index :: blogList";
     }
 
     @RequestMapping("/blog")
     public String Blog() {
+        return "blog";
+    }
+
+    @RequestMapping("/blog/{id}")
+    public String getBlog(Model model, @PathVariable Long id) {
+        BlogIndex blog = blogService.getBlogDigitById(id);
+        System.out.println(blog.toString());
+        model.addAttribute("blog", blog);
         return "blog";
     }
 
@@ -47,31 +92,4 @@ public class indexController {
         return "tags";
     }
 
-//    @RequestMapping("/admin/login")
-//    public String adminLogin() {
-//        return "admin/login";
-//    }
-//
-//    @RequestMapping("/admin/index")
-//    public String adminIndex() {
-//        return "admin/index";
-//    }
-//
-//    @RequestMapping("/admin/manage")
-//    public String adminManage() {
-//        return "admin/manage";
-//    }
-//
-//    @RequestMapping("/admin/post_blogs")
-//    public String adminPostBlogs() {
-//        return "admin/post_blogs";
-//    }
-
-//    @RequestMapping("/getAllUser")
-//    public String getAllUser(Model model) {
-//        List<User> users = userService.findAll();
-//        System.out.println(users.toString());
-//        model.addAttribute("users", users);
-//        return "test";
-//    }
 }

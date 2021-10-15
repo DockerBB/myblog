@@ -74,4 +74,33 @@
         </where>
 
     </select>
+
+<!--    查询首页博客列表摘要-->
+    <select id="getBlogDigit" resultType="com.wf.myblog.queryenc.BlogIndex">
+        select s.id, s.title, s.description, s.create_time as createTime, s.views, s.type_id as typeId, typeName, s.first_picture as firstPicture, u.user_name as userName, u.avatar
+        from
+            (select b.id, b.title, b.description, b.create_time, b.views, b.type_id, t.name as typeName, b.first_picture, b.user_id
+             from blog as b LEFT JOIN type as t on b.type_id=t.id
+             order by b.create_time desc
+            ) as s LEFT JOIN user as u ON s.user_id=u.id
+        order by b.create_time desc
+    </select>
+
+<!--    根据id查询博客摘要-->
+    <select id="getBlogDigitById" resultType="com.wf.myblog.queryenc.BlogIndex">
+        select s.id, s.title, s.description, s.create_time as createTime, s.views, s.type_id as typeId, typeName, s.first_picture as firstPicture, u.user_name as userName, u.avatar
+        from
+            (select b.id, b.title, b.description, b.create_time, b.views, b.type_id, t.name as typeName, b.first_picture, b.user_id
+             from blog as b LEFT JOIN type as t on b.type_id=t.id
+             order by b.create_time desc
+            ) as s LEFT JOIN user as u ON s.user_id=u.id
+        where s.id=#{id}
+    </select>
+<!--    查询发布时间前5的博客-->
+    <select id="getBlogTitle" resultType="com.wf.myblog.queryenc.BlogTitle">
+        select b.id, b.title
+        from blog.blog as b
+        order by b.create_time desc
+        limit 5
+    </select>
 </mapper>

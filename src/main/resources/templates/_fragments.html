@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="../static/css/animate.min.css" th:href="@{/css/animate.min.css}">
     <link rel="stylesheet" href="../static/css/prism.css" th:href="@{/css/prism.css}">
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css" >
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted stackable secondary menu">
             <h2 class="ui teal header item">Blog</h2>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
+            <a th:href="@{/index}" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a th:href="@{/category}" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a th:href="@{/tags}" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a th:href="@{/archives}" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a th:href="@{/about}" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
 
             <div class="right m-item item m-mobile-hide">
                 <div class="ui icon input">
@@ -84,6 +86,7 @@
     <script src="../static/lib/qrcode/qrcode.js" th:src="@{/lib/qrcode/qrcode.js}"></script>
     <script src="../static/lib/scrollTo/scrollTo.js" th:src="@{/lib/scrollTo/scrollTo.js}"></script>
     <script src="../static/lib/waypoint/jquery.waypoints.js" th:src="@{/lib/waypoint/jquery.waypoints.js}"></script>
+    <script src="../static/lib/editormd/editormd.js"></script>
 </div>
 </body>
 </html>

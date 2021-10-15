@@ -1,12 +1,9 @@
 package com.wf.myblog.admin;
 
-import com.alibaba.druid.sql.visitor.functions.Now;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.wf.myblog.Bean.Blog;
-import com.wf.myblog.Bean.Type;
 import com.wf.myblog.Bean.User;
-import com.wf.myblog.Dao.BlogDao;
 import com.wf.myblog.Service.BlogService;
 import com.wf.myblog.Service.CategoryService;
 import com.wf.myblog.Service.TagService;
@@ -19,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
-import javax.websocket.server.PathParam;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -81,6 +77,7 @@ public class BlogController {
         blog.setUserId(blog.getUser().getId());
         //初次创建设置新增时间
         if(blog.getId() == null) {
+            blog.setViews(0);
             blog.setCreateTime(new Timestamp(System.currentTimeMillis()));
             int b = blogService.saveBlog(blog);
             if(b == 0){
@@ -89,6 +86,7 @@ public class BlogController {
                 attributes.addFlashAttribute("message", "新增成功");
             }
         }else {
+            blog.setViews(blog.getViews() + 1);
             blog.setUpdateTime(new Timestamp(System.currentTimeMillis()));
             int b = blogService.updateBlog(blog);
             if(b == 0){
@@ -114,18 +112,12 @@ public class BlogController {
     // 博客条件查询
     @PostMapping("/searchBlog")
     public String searchBlog(SearchBlog searchBlog, Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
-        System.out.println("###########");
         String orderBy = "id asc";
         System.out.println(searchBlog.toString());
         if(searchBlog.getTitle().equals("")) {
-            System.out.println("***************");
             searchBlog.setTitle(null);
         }
-        if(searchBlog.getTitle() == null) System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@");
-//        else {
-//            System.out.println(searchBlog.getTitle());
-//            System.out.println("$$$$$$$");
-//        }
+
         System.out.println(searchBlog.toString());
         PageHelper.startPage(pageNum, 5, orderBy);
         List<BlogQuery> Blogs = blogService.getSearchBlog(searchBlog);

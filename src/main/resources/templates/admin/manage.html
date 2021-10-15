@@ -129,8 +129,8 @@
                     <tr>
                         <th colspan="6">
                             <div class="ui mini floated pagination menu">
-                                <a class="item" onclick="page(this)" th:attr="data-page=${pageInfo.pageNum}-1" th:unless="${pageInfo.isFirstPage}">上一页</a>
-                                <a class="item" onclick="page(this)" th:attr="data-page=${pageInfo.pageNum}+1" th:unless="${pageInfo.isLastPage}">下一页</a>
+                                <a class="item" onclick="page(this)" th:attr="data-page=${pageInfo.pageNum}-1" >上一页</a>
+                                <a class="item" onclick="page(this)" th:attr="data-page=${pageInfo.pageNum}+1" >下一页</a>
                             </div>
                             <a href="" th:href="@{/admin/blogs/input}" class="ui mini right floated teal basic button">新增</a>
                         </th>
