@@ -32,6 +32,11 @@ public class CategoryServiceImpl implements CategoryService{
         return all;
     }
 
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+        return categoryDao.listTypeTop(size);
+    }
+
     @Transactional
     @Override
     public int updateType(Long id, Type type) {

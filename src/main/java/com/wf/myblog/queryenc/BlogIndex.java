@@ -16,4 +16,5 @@ public class BlogIndex {
     private String firstPicture;
     private String userName;
     private String avatar;
+    private String content;
 }

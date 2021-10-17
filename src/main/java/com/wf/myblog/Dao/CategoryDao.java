@@ -15,6 +15,8 @@ public interface CategoryDao {
 
     List<Type> getAllType();
 
+    List<Type> listTypeTop(Integer size);
+
     int updateType(Type type);
 
     int deleteType(Long id);

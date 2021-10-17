@@ -47,60 +47,12 @@
             </div>
 
             <div class="ui attached segment m-padded-tb-large">
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic teal button">二分</a>
-                    <div class="ui basic teal left pointing label">2</div>
+                <div th:each="type:${types}" class="ui labeled button m-margin-top-small">
+                    <a th:text="${type.name}" href="#" class="ui basic teal button">二分</a>
+                    <div th:text="${#arrays.length(type.blogs)}" class="ui basic teal left pointing label">2</div>
                 </div>
 
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
 
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
-                <div class="ui labeled button m-margin-top-small">
-                    <a href="#" class="ui basic button">字典树</a>
-                    <div class="ui basic left pointing label">3</div>
-                </div>
             </div>
             <div class="ui top attached teal segment">
                 <div class="ui padded vertical segment m-padded-tb-large m-mobile-lr-clear">

@@ -115,7 +115,7 @@
 <!--                                th:each="type:${types}" th:text="${type.name}"-->
 <!--                                <a href="#" class="item" >学习日志 <div class="ui teal basic left pointing label">13</div></a>-->
 <!--                                <a href="#" class="item" >学习日志 <div class="ui teal basic left pointing label">13</div></a>-->
-                                    <a href="#" class="item" th:each="type:${types}" th:text="${type.name}">学习日志 <div class="ui teal basic left pointing label">13</div></a>
+                                    <a href="#" class="item" th:each="type:${types}"><span th:text="${type.name}"></span> <div th:text="${#arrays.length(type.blogs)}" class="ui teal basic left pointing label">13</div></a>
                             </div>
                         </div>
                     </div>
@@ -210,7 +210,6 @@
         function loaddata() {
             console.log("loaddata")
             $("#table-container").load("/blog/page",{
-                // recommend: $("[name='recommend']").prop('checked'),
                 pageNum : $("[name='page']").val()
             });
             console.log($("[name='page']").val())

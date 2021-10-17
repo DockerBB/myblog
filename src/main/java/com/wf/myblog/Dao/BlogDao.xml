@@ -14,6 +14,8 @@
             <result property="name" column="name"/>
         </association>
     </resultMap>
+
+
 <!--    查询所有blog-->
     <select id="getAllBlog" resultMap="blogQuery">
         select b.id, b.title, DATE_FORMAT(b.update_time, '%Y-%m-%d %H:%i:%S') as update_time, b.recommend, b.published, b.type_id, t.id as tid, t.name
@@ -77,9 +79,9 @@
 
 <!--    查询首页博客列表摘要-->
     <select id="getBlogDigit" resultType="com.wf.myblog.queryenc.BlogIndex">
-        select s.id, s.title, s.description, s.create_time as createTime, s.views, s.type_id as typeId, typeName, s.first_picture as firstPicture, u.user_name as userName, u.avatar
+        select s.id, s.title, s.description, s.create_time as createTime, s.views, s.type_id as typeId, typeName, s.first_picture as firstPicture, u.user_name as userName, u.avatar, s.content
         from
-            (select b.id, b.title, b.description, b.create_time, b.views, b.type_id, t.name as typeName, b.first_picture, b.user_id
+            (select b.id, b.title, b.description, b.create_time, b.views, b.type_id, t.name as typeName, b.first_picture, b.user_id, b.content
              from blog as b LEFT JOIN type as t on b.type_id=t.id
              order by b.create_time desc
             ) as s LEFT JOIN user as u ON s.user_id=u.id
@@ -88,9 +90,9 @@
 
 <!--    根据id查询博客摘要-->
     <select id="getBlogDigitById" resultType="com.wf.myblog.queryenc.BlogIndex">
-        select s.id, s.title, s.description, s.create_time as createTime, s.views, s.type_id as typeId, typeName, s.first_picture as firstPicture, u.user_name as userName, u.avatar
+        select s.id, s.title, s.description, s.create_time as createTime, s.views, s.type_id as typeId, typeName, s.first_picture as firstPicture, u.user_name as userName, u.avatar, s.content
         from
-            (select b.id, b.title, b.description, b.create_time, b.views, b.type_id, t.name as typeName, b.first_picture, b.user_id
+            (select b.id, b.title, b.description, b.create_time, b.views, b.type_id, t.name as typeName, b.first_picture, b.user_id, b.content
              from blog as b LEFT JOIN type as t on b.type_id=t.id
              order by b.create_time desc
             ) as s LEFT JOIN user as u ON s.user_id=u.id

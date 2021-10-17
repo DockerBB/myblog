@@ -3,6 +3,7 @@ package com.wf.myblog.Controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.wf.myblog.Bean.Blog;
+import com.wf.myblog.Bean.Type;
 import com.wf.myblog.Bean.User;
 import com.wf.myblog.Service.*;
 import com.wf.myblog.queryenc.BlogIndex;
@@ -35,11 +36,15 @@ public class indexController {
         PageHelper.startPage(pageNum, 5, orderBy);
         List<BlogIndex> BlogsDigit = blogService.getBlogDigit();
         System.out.println(BlogsDigit.toString());
+        int len = BlogsDigit.size();
+
         PageInfo<BlogIndex> pageInfo = new PageInfo<>(BlogsDigit);
         model.addAttribute("pageInfo", pageInfo);
-        model.addAttribute("types", categoryService.listType());
+        model.addAttribute("types", categoryService.listTypeTop(7));
         model.addAttribute("tags", tagService.listTag());
-
+        List<Type> types = (List<Type>)model.getAttribute("types");
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println(types.toString());
         List<BlogTitle> blogTitles = blogService.getBlogTitle();
         System.out.println(blogTitles.toString());
         model.addAttribute("blogRecommend", blogTitles);
@@ -83,7 +88,8 @@ public class indexController {
     }
 
     @RequestMapping("/category")
-    public String category() {
+    public String category(Model model) {
+        model.addAttribute("types", categoryService.listType());
         return "category";
     }
 

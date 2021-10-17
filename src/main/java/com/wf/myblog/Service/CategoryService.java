@@ -15,6 +15,8 @@ public interface CategoryService {
 
     List<Type> listType();
 
+    List<Type> listTypeTop(Integer size);
+
     int updateType(Long id, Type type);
 
     int delteType(Long id);

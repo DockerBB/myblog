@@ -2,6 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wf.myblog.Dao.CategoryDao">
     <!--新增保存分类-->
+    <resultMap id="type" type="com.wf.myblog.Bean.Type">
+        <id property="id" column="tid"/>
+        <result property="name" column="name"/>
+        <collection property="blogs" ofType="com.wf.myblog.Bean.Blog">
+            <id property="id" column="bid"/>
+            <result property="title" column="title"/>
+            <result property="typeId" column="type_id"/>
+        </collection>
+    </resultMap>
+
     <insert id="saveType" parameterType="com.wf.myblog.Bean.Type">
         insert into blog.type values (#{id},#{name});
     </insert>
@@ -16,8 +26,15 @@
         select count(*) from blog.type where name = #{name}
     </select>
 <!--    获取所有分类-->
-    <select id="getAllType" resultType="com.wf.myblog.Bean.Type">
-        select * from blog.type
+    <select id="getAllType" resultMap="type">
+        select t.id tid, t.name, b.id bid, b.title,b.type_id from blog.type t left join blog.blog b on t.id = b.type_id
+    </select>
+
+<!--    获取前size个标签-->
+    <select id="listTypeTop" resultMap="type">
+        select t.id tid, t.name, b.id bid, b.title,b.type_id
+        from blog.type t left join blog.blog b on t.id = b.type_id
+        limit #{size}
     </select>
 
 <!--    更新分类-->
