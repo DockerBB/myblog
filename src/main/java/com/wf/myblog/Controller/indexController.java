@@ -88,9 +88,27 @@ public class indexController {
     }
 
     @RequestMapping("/category")
-    public String category(Model model) {
+    public String category(Model model, @RequestParam(defaultValue = "1", value = "pageNum") Integer pageNum) {
+        String orderBy = "id desc";
+        PageHelper.startPage(pageNum, 5, orderBy);
+        List<BlogIndex> BlogsDigit = blogService.getBlogDigit();
+        PageInfo<BlogIndex> pageInfo = new PageInfo<>(BlogsDigit);
+        model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("types", categoryService.listType());
         return "category";
+    }
+
+    @RequestMapping("/category/page")
+    public String categoryPage(Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
+        System.out.println(pageNum);
+        String orderBy = "id desc";
+        PageHelper.startPage(pageNum, 5, orderBy);
+        List<BlogIndex> BlogsDigit = blogService.getBlogDigit();
+        System.out.println(BlogsDigit.toString());
+
+        PageInfo<BlogIndex> pageInfo = new PageInfo<>(BlogsDigit);
+        model.addAttribute("pageInfo", pageInfo);
+        return "category :: blogList";
     }
 
     @RequestMapping("/tags")
